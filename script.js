@@ -24,6 +24,11 @@ function getTimestamp() {
   return Math.floor(Date.now() / 1000)
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const hiddenInput = document.getElementById("hiddenInput");
+  hiddenInput.focus();
+})
+
 document.addEventListener("keyup", event => {
   const keyPressed = String.fromCharCode(event.keyCode);
   console.log(keyPressed)
