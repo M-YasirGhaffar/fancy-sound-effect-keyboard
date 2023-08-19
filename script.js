@@ -24,11 +24,6 @@ function getTimestamp() {
   return Math.floor(Date.now() / 1000)
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const hiddenInput = document.getElementById("hiddenInput");
-  hiddenInput.focus();
-})
-
 document.addEventListener("keyup", event => {
   const keyPressed = String.fromCharCode(event.keyCode);
   console.log(keyPressed)
@@ -51,7 +46,7 @@ document.addEventListener("keyup", event => {
     const success = new Audio('sounds/correct.wav');
     success.play();
   } else {
-    let randNum = Math.floor(Math.random()*9) + 1
+    let randNum = Math.floor(Math.random()*8) + 1;
     const errorAudio = new Audio(`sounds/error${randNum}.mp3`);
     errorAudio.play();
   }

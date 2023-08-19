@@ -116,7 +116,11 @@ li {
 
 .hidden {
   position: absolute;
-  top: -999;
+  top: 0vh;
+  width: 80%;
+  height: 2rem;
+  background-color: white;
+  color: white;
 }
 
 .caution {
