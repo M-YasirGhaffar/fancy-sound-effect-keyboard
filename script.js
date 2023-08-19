@@ -24,8 +24,6 @@ function getTimestamp() {
   return Math.floor(Date.now() / 1000)
 }
 
-
-
 document.addEventListener("keyup", event => {
   const keyPressed = String.fromCharCode(event.keyCode);
   console.log(keyPressed)
