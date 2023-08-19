@@ -116,10 +116,9 @@ li {
 
 .hidden {
   position: absolute;
-  top: 0vh;
-  width: 80%;
-  height: 2rem;
-  background-color: white;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem;
   color: white;
 }
 
